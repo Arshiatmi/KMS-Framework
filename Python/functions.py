@@ -1,13 +1,9 @@
-import httplib
+import validators
 import js2py
 import sys
 
 def check(website):
-    site = httplib.HTTPConnection(website)
-    site.request("HEAD", '')
-    if site.getresponse().status == 200:
-       return 1
-    return 0
+    return bool(validators.url(website))
 
 def encode(str):
     a = sys.argv[1]

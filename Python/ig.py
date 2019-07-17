@@ -7,17 +7,17 @@ a = kms.IG()
 #Get Address Of Taget
 address = input("Enter Your Target Address : ")
 
+#check If URL Is Valid.
+if not functions.check(address):
+    print("Sorry! Target Not Found!")
+    exit(0)
+
 #Removes http:// From Address and Check If Website Is Valid.
 #It removes http:// Because kms Library Doesnt Support A URL With
 #an http:// .
 if address.find("http://"):
     #Replace http:// With Nothing! Means Removing!
     address = address.replace("http://","")
-
-    #check If URL Is Valid.
-    if not functions.check(address):
-        print("Sorry! Target Not Found!")
-        exit(0)
 
 print("\n")
 
@@ -40,7 +40,7 @@ while True:
     [13] -> Traceroute
     [14] -> Whois
     [15] -> Zone Transfer
-    
+
     [99] -> exit
     \033[1;37;""")
 
@@ -49,63 +49,63 @@ while True:
 
     # Get { A Records } Of A Website
     if cmd == "1":
-        a.a_records()
+        print(a.a_records())
 
     # Get An { AS Lookup } Of A Website
     elif cmd == "2":
-        a.as_lookup()
+        print(a.as_lookup())
 
     # Get A { DNS Lookup Test } Of A Website
     elif cmd == "3":
-        a.dns_lookup()
+        print(a.dns_lookup())
 
     # { Find Dns Servers } Of A Website
     elif cmd == "4":
-        a.find_dns_servers()
+        print(a.find_dns_servers())
 
     # Get A { HTTP Headers } Of A Website
     elif cmd == "5":
-        a.http_headers()
+        print(a.http_headers())
 
     # Get A { Ip Location } Of A Website
     elif cmd == "6":
-        a.ip_location()
+        print(a.ip_location())
 
     # Get All { Page Links } Of A Website
     elif cmd == "7":
-        a.page_links()
+        print(a.page_links())
 
     # Get A Common { Ping }
     elif cmd == "8":
-        a.ping()
+        print(a.ping())
 
     # Get A { Reverse Ip Lookup } Of A Website
     elif cmd == "9":
-        a.reverse_ip_lookup()
+        print(a.reverse_ip_lookup())
 
     # Get A { Reverse DNS Test } Of A Website
     elif cmd == "10":
-        a.reverse_dns()
+        print(a.reverse_dns())
 
     # { Subnet Calculator }. Test It! Its Good!
     elif cmd == "11":
-        a.subnet_calc()
+        print(a.subnet_calc())
 
     # Get A { TCP Port Scan Test } Of A Website. Its Nice One!
     elif cmd == "12":
-        a.tcp_port_scan()
+        print(a.tcp_port_scan())
 
     # Get A { Traceroute } Of A Website
     elif cmd == "13":
-        a.traceroute()
+        print(a.traceroute())
 
     # Get A { Whois Test } Of A Website
     elif cmd == "14":
-        a.whois()
+        print(a.whois())
 
     # Get A { Zone Transfer Test } Of A Website
     elif cmd == "15":
-        a.zone_transfer()
+        print(a.zone_transfer())
 
     # Exit If cmd Is 99{Exit}
     elif cmd == "99":
