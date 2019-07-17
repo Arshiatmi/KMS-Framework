@@ -9,6 +9,9 @@ all_ruby_requires = ruby_requires_file.readlines()
 #Close The requirements_rb.txt File.
 ruby_requires_file.close()
 
+#Change The Actice Console Code Page To West European Latin.
+system "chcp 1252"
+
 #Read All Requirements One By One And Install Them.
 all_ruby_requires.each do |i|
   system "gem install #{i.gsub("\n","").downcase}"
