@@ -11,7 +11,7 @@ ruby_requires_file.close()
 
 #Read All Requirements One By One And Install Them.
 all_ruby_requires.each do |i|
-  system "gem install #{i.replace("\n","").downcase}"
+  system "gem install #{i.gsub("\n","").downcase}"
 end
 
 #Open requirements_py.txt File That Contains All Python Libraries
@@ -27,5 +27,5 @@ python_requires_file.close()
 
 #Read All Requirements One By One And Install Them.
 all_python_requires.each do |i|
-  system "python -m pip install #{i.replace("\n","").downcase}"
+  system "python -m pip install #{i.gsub("\n","").downcase}"
 end
