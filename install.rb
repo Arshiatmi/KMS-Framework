@@ -10,7 +10,7 @@ all_ruby_requires = ruby_requires_file.readlines()
 ruby_requires_file.close()
 
 #Read All Requirements One By One And Install Them.
-for i in all_ruby_requires
+all_ruby_requires.each do |i|
   system "gem install #{i.replace("\n","").downcase}"
 end
 
@@ -26,6 +26,6 @@ all_python_requires = python_requires_file.readlines()
 python_requires_file.close()
 
 #Read All Requirements One By One And Install Them.
-for i in all_python_requires
+all_python_requires.each do |i|
   system "python -m pip install #{i.replace("\n","").downcase}"
 end
