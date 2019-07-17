@@ -22,13 +22,14 @@ while cmd != "99"
   print " >>"
   cmd = gets.chomp
   if cmd.include? "1"
-    system "python ig.py"
+    system "python Python/ig.py"
   elsif cmd.include? "2"
-    system "python bypass.py"
+    system "python Python/bypass.py"
   elsif cmd.include? "3"
-    system "python Hash.py"
+    system "python Python/Hash.py"
   elsif cmd.include? "4"
-    system "python others.py"
+    system "python Python/others.py"
+  elsif cmd.include? "99"
   else
     puts "Wrong Command! Please Try Again!"
   end
