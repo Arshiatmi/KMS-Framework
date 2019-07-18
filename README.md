@@ -1,3 +1,6 @@
+# Important
+This Project Still Creating And Doesnt Completed! I'll Realese It Soon!
+
 # KMS-Framework
 This Is **KMS Hacking Framework**.A Well Framework That Created With KMS Library.
 # Installation
