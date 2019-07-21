@@ -46,8 +46,5 @@ while True:
         for i in kms.xss_exploits(str):
             print("\033[1;31;[+] -> " + i + "\033[1;37;")
 
-    elif cmd == "4":
-
-
     else:
         print("\033[1;31;You Entered Wrong Command!\033[1;37;")
