@@ -85,7 +85,7 @@ while True:
 
     # Get A { Reverse DNS Test } Of A Website
     elif cmd == "10":
-        print(a.reverse_dns())
+        print(a.revere_dns())
 
     # { Subnet Calculator }. Test It! Its Good!
     elif cmd == "11":
