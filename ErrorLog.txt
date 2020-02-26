@@ -1,1 +1,0 @@
-Error at Main.rb, lines 26 - 39: Issue executing Python system command. Make sure Python is installed and works on your terminal system.
