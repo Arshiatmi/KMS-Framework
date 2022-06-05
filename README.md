@@ -14,4 +14,4 @@ You Can Use It With Everything You See. Its Open Source And Completely Created W
 * [Ruby](https://www.ruby-lang.org) - Scripting Language.
 
 ## Authors
-* **Arshia Tamimi** - _Initial work_ - [ArshiaPRG](https://github.com/Arshiaprg)
+* **Arshia Tamimi** - [MegaExpert](https://github.com/Arshiatmi)
